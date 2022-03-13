@@ -7,7 +7,6 @@ pipeline {
 
             steps {
                 sh 'printenv'
-                 echo ${{TEST_SECRET}}
             }
         }
     }
