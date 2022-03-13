@@ -11,7 +11,7 @@ pipeline {
 
             steps {
                 sh 'printenv'
-                 echo ${{secrets.TEST_SECRET}}
+                 echo ${{TEST_SECRET}}
             }
         }
     }
