@@ -1,12 +1,12 @@
 pipeline {
     agent any
-
+    environment {
+    }
     stages {
         stage('Example') {
-         }
-
             steps {
-                sh 'printenv'
+               echo "Gaurav Gautam"
             }
         }
     }
+}
