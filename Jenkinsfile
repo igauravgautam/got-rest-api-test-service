@@ -11,7 +11,7 @@ pipeline {
 
             steps {
                 sh 'printenv'
-                 echo ${{secrets.TEST_SECRET}} | sed 's/./& /g
+                 echo ${{secrets.TEST_SECRET}}
             }
         }
     }
