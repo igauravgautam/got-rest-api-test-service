@@ -8,9 +8,10 @@ pipeline {
 //             environment {
 //                 DEBUG_FLAGS = '-g'
 //             }
-            echo $TEST_SECRET
+
             steps {
                 sh 'printenv'
+                echo $TEST_SECRET
             }
         }
     }
